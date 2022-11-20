@@ -8,9 +8,10 @@ import SellIcon from '@mui/icons-material/Sell';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import { Paper } from '@mui/material';
+import { useState } from 'react';
 
 function LabelBottomNavigation() {
-  const [value, setValue] = React.useState('login');
+  const [value, setValue] = useState('login');
   const router = useRouter()
   const handleChange = (event, newValue) => {
     setValue(newValue);

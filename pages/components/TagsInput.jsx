@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Box, Chip, TextField } from "@mui/material";
+import { useState } from "react";
 // import { makeStyles } from "@mui/styles";
 // import TextField from "@material-ui/core/TextField";
 // import Downshift from "downshift";
@@ -14,8 +15,8 @@ import { Box, Chip, TextField } from "@mui/material";
 export default function TagsInput({ ...props }) {
     // const classes = useStyles();
     const { selectedTags, placeholder, tags, ...other } = props;
-    const [inputValue, setInputValue] = React.useState("");
-    const [selectedItem, setSelectedItem] = React.useState([]);
+    const [inputValue, setInputValue] = useState("");
+    const [selectedItem, setSelectedItem] = useState([]);
     useEffect(() => {
         setSelectedItem(tags);
     }, [tags]);

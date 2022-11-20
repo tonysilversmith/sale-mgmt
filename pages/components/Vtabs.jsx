@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { useState } from 'react';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -39,7 +40,7 @@ function a11yProps(index) {
 }
 
 export default function VerticalTabs() {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);

@@ -4,11 +4,12 @@ import { Box } from "@mui/system";
 import Grid from '@mui/material/Unstable_Grid2';
 import MedName from "../components/MedName";
 import * as React from 'react'
+import { useState } from "react";
 
 const index = () => {
 
     let temp;
-    const [inputFields, setInputFields] = React.useState([
+    const [inputFields, setInputFields] = useState([
         { name: '', quantity: 0 }
     ])
 

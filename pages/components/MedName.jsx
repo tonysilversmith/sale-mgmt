@@ -12,6 +12,9 @@ import Dialog from '@mui/material/Dialog';
 import RadioGroup from '@mui/material/RadioGroup';
 import Radio from '@mui/material/Radio';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { useState } from 'react';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 const options = [
     'None',
@@ -32,10 +35,10 @@ const options = [
 
 function ConfirmationDialogRaw(props) {
     const { onClose, value: valueProp, open, ...other } = props;
-    const [value, setValue] = React.useState(valueProp);
-    const radioGroupRef = React.useRef(null);
+    const [value, setValue] = useState(valueProp);
+    const radioGroupRef = useRef(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (!open) {
             setValue(valueProp);
         }
@@ -104,8 +107,8 @@ ConfirmationDialogRaw.propTypes = {
 };
 
 export default function MedName(props) {
-    const [open, setOpen] = React.useState(false);
-    const [value, setValue] = React.useState('Dione');
+    const [open, setOpen] = useState(false);
+    const [value, setValue] = useState('Dione');
 
     const handleClickListItem = () => {
         setOpen(true);
