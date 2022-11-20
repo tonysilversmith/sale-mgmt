@@ -34,7 +34,6 @@ export default function SignIn() {
                 <Paper elevation={24} sx={{ padding: 5, maxWidth: 700, display: "grid", placeItems: "center", mt: 25 }}>
                     <Box
                         sx={{
-                            // marginTop: 8,
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center"

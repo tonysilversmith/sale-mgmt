@@ -42,10 +42,6 @@ const index = () => {
     function handleSelecetedTags(items) {
         console.log(items);
     }
-
-    // React.useEffect(() => {
-
-    // }, chips)
     return (
         <Box>
             <VerticalTabs />
