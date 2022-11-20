@@ -3,7 +3,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: calc(100vh - 150px);
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -13,6 +13,7 @@
 }
 
 .footer {
+  margin-bottom: 60px;
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -66,7 +67,9 @@
 }
 
 .grid {
+  margin-top: 2em;
   display: flex;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -116,13 +119,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
