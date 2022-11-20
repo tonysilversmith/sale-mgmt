@@ -6,7 +6,7 @@ import MedName from "../components/MedName";
 import * as React from 'react'
 import { useState } from "react";
 
-const index = () => {
+const Sale = () => {
 
     let temp;
     const [inputFields, setInputFields] = useState([
@@ -117,4 +117,4 @@ const index = () => {
         </Box >
     )
 }
-export default index;
+export default Sale;
